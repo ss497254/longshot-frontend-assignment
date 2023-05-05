@@ -1,0 +1,74 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.18.0/inter.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: Inter, Ubuntu, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+h1,
+h2,
+h3 {
+    @apply font-bold;
+}
+
+h1 {
+    font-size: 28px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 20px;
+}
+
+.flex-c {
+    @apply flex flex-col;
+}
+
+.scrollbar-tiny::-webkit-scrollbar {
+    width: 5px;
+}
+
+#__next {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.scrollbar-tiny::-webkit-scrollbar-thumb {
+    background-color: #bababa;
+    border-radius: 5px;
+}
+
+@layer base {
+    .c {
+        @apply flex justify-center items-center;
+    }
+
+    .f {
+        @apply flex;
+    }
+}
+
+/* 
+for group filter button
+ */
+.custom-top-bar::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 40px;
+    background-color: #727882;
+    height: 16px;
+    width: 1px;
+}
