@@ -1,5 +1,6 @@
 import React from "react";
 import { Card } from "src/ui/Card";
+import { CircularProgress } from "src/ui/CircularProgress";
 
 interface CardsProps {}
 
@@ -11,8 +12,11 @@ export const Cards: React.FC<CardsProps> = () => {
                 <h3>480 🇺🇸</h3>
                 <hr className="my-3 w-[92%] mx-auto" />
                 Keyword Difficulty
-                <h3 className="mt-1">46%</h3>
-                <div className="mb-1 text-gray-700">Possible</div>
+                <h3 className="mt-1 f">
+                    46%
+                    <CircularProgress className="ml-5" size={40} value={0.46} />
+                </h3>
+                <div className="mb-1 -mt-2 text-gray-700">Possible</div>
                 <p className="text-sm text-gray-600">
                     Slightly more competition. You'll need well-structured and
                     unique content appropriately optimized for your keywords.

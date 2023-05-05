@@ -1,0 +1,19 @@
+.circle-progress {
+    fill: none;
+}
+
+.circle-progress {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    animation: c-progress 1000ms ease-out forwards;
+}
+
+@keyframes c-progress {
+    from {
+        stroke-dashoffset: var(--perimeter);
+    }
+    to {
+        stroke-dashoffset: var(--dash-offset);
+    }
+}

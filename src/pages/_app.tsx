@@ -1,7 +1,8 @@
 import { AppProps } from "next/app";
 import Head from "next/head";
 import React from "react";
-import "../styles/globals.css";
+import "src/styles/globals.css";
+import "src/styles/circular-progress.css";
 
 function App({ Component, pageProps }: AppProps) {
     return (
