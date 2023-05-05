@@ -1,6 +1,9 @@
 # Longshot-assignment
 
-## [Video Explanation](https://drive.google.com/file/d/195VqII7YSgYZxICvF3OasTFWCey_pH0W/view?usp=sharing)
+## About me
+
+Hi, I'm Saurabh Singh, a skilled Full Stack Web Developer with two years of experience in developing responsive and user-friendly web applications using technologies such as Next.js, React.js, Node.js, React Native, Golang, Docker, Nginx, and AWS.
+I'm a pre-final year undergraduate student pursuing a Bachelor's degree in Computer Science and Engineering from IIT Dhanbad, and has a keen interest in app development, cloud computing, computer networks, and cybersecurity. With a strong foundation in software engineering principles, I'm committed to delivering high-quality products and collaborating effectively with teams in fast-paced environments.
 
 Assignment for frontend intern
 
@@ -19,26 +22,3 @@ npm i
 npm run build
 npm start
 ```
-
-### About
-
-It's a next app and has two pages.
-
--   index.tsx
--   404.tsx
-
-`index.tsx` is the main entrypoint. It's has two main component sidebar and query container. Siderbar has build query button when clicked open create query modal where you can create the queries, and query container will render list of all the queries created.
-
-### Rule Group
-
-_Not much information is provided on how to convert rule object to string
-and how rule group is connected to other rule group.
-I tried to ask for sample queries but didn't get any response._
-
-So based on my understanding I structured in a way like:
-the output of each query will be a rule_group and a rule_group can a have a array of rules or rule_groups as children. A rule is filter object that has some condition to be fulfilled.
-
-Each rule will be joined based on the conjuction provided, and rules when combined will form bigger rule group.
-
-Please refer the video attached
-<a href="https://drive.google.com/file/d/195VqII7YSgYZxICvF3OasTFWCey_pH0W/view?usp=sharing"> Video Link </a>
