@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
+import { DragIcon } from "src/icons";
 
 const defaultList = [
     "Shopping in Barcelona",
@@ -49,12 +50,16 @@ export const DndList: React.FC<DndListProps> = () => {
                                 >
                                     {(provided) => (
                                         <li
-                                            className="w-full px-3 py-2.5 rounded bg-slate-200"
+                                            className="w-full px-3 f justify-between py-2.5 rounded bg-slate-200"
                                             ref={provided.innerRef}
                                             {...provided.draggableProps}
                                             {...provided.dragHandleProps}
                                         >
-                                            <p>{item}</p>
+                                            {item}
+                                            <DragIcon
+                                                size={24}
+                                                className="stroke-gray-600"
+                                            />
                                         </li>
                                     )}
                                 </Draggable>

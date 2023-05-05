@@ -4,7 +4,7 @@ export { default as CloseIcon } from "./CloseIcon";
 export { default as CollapseIcon } from "./CollapseIcon";
 export { default as DashboardIcon } from "./DashboardIcon";
 export { default as ShoppingCartIcon } from "./ShoppingCartIcon";
-export { default as Edit } from "./Edit";
+export { default as DragIcon } from "./DragIcon";
 export { default as InfoIcon } from "./InfoIcon";
 export { default as Logo } from "./Logo";
 export { default as LinkIcon } from "./Link";
