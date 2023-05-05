@@ -25,10 +25,10 @@ export const TabButtons: React.FC<props> = ({
                         onClick(title);
                     }}
                     className={[
-                        "py-1 px-3 last:rounded-r-lg  first:rounded-l-lg border-x border-gray-300",
+                        "py-1 px-3 last:rounded-r-lg  first:rounded-l-lg border-x",
                         value === title
                             ? "bg-blue-300 border border-blue-500"
-                            : "last:border-r-0 first:border-l-0",
+                            : "last:border-r-0 first:border-l-0 border-gray-300",
                     ].join(" ")}
                 >
                     {title}

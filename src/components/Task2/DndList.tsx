@@ -44,7 +44,7 @@ export const DndList: React.FC<DndListProps> = () => {
                             return (
                                 <Draggable
                                     key={idx}
-                                    draggableId={item}
+                                    draggableId={idx.toString()}
                                     index={idx}
                                 >
                                     {(provided) => (
