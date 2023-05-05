@@ -1,29 +1,34 @@
 import React from "react";
 import {
-    AnalysisIcon,
-    CalendarIcon,
-    DownloadIcon,
+    ChefIcon,
+    CloseIcon,
+    CollapseIcon,
+    DashboardIcon,
+    InfoIcon,
     Logo,
-    SettingsIcon,
+    MapIcon,
+    ShoppingCartIcon,
+    SignalIcon,
     StarIcon,
 } from "src/icons";
+import FunnelIcon from "src/icons/FunnelIcon";
 import { Button } from "src/ui/Button";
 import { NavLink } from "src/ui/NavLink";
 
 interface props {}
 
 const links1 = [
-        { icon: <StarIcon />, name: "Dashboard" },
-        { icon: <DownloadIcon />, name: "Recipes" },
+        { icon: <DashboardIcon />, name: "Dashboard" },
+        { icon: <ChefIcon />, name: "Recipes" },
     ],
     links2 = [
-        { icon: <CalendarIcon />, name: "Blog" },
-        { icon: <AnalysisIcon />, name: "Templates" },
-        { icon: <SettingsIcon />, name: "Integrations" },
+        { icon: <InfoIcon />, name: "Blog" },
+        { icon: <StarIcon size={20} />, name: "Templates" },
+        { icon: <FunnelIcon />, name: "Integrations" },
     ],
     links3 = [
-        { icon: <CalendarIcon />, name: "Product Roadmap" },
-        { icon: <AnalysisIcon />, name: "What's New?" },
+        { icon: <MapIcon />, name: "Product Roadmap" },
+        { icon: <SignalIcon />, name: "What's New?" },
     ];
 
 export const SideBar: React.FC<props> = () => {
@@ -59,7 +64,7 @@ export const SideBar: React.FC<props> = () => {
                     </div>
                 </div>
                 <Button
-                    icon={<StarIcon />}
+                    icon={<ShoppingCartIcon />}
                     btn="success"
                     className="!justify-start w-full gap-3 my-1"
                 >
@@ -77,8 +82,8 @@ export const SideBar: React.FC<props> = () => {
                     </div>
                 ))}
             </div>
-            <div className="items-center gap-4 px-4 py-3 f">
-                <AnalysisIcon /> Collapse
+            <div className="items-center gap-2 px-4 py-3 f">
+                <CollapseIcon /> Collapse
             </div>
         </div>
     );
